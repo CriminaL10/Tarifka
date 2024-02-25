@@ -2,7 +2,7 @@ import React from 'react';
 import Config from 'react-native-config';
 import useFetch from '../../hooks/useFetch';
 import MealDetailsCard from '../../components/MealDetailsCard';
-import {FlatList, View} from 'react-native';
+import {FlatList} from 'react-native';
 import Loading from '../../components/Loading';
 import Error from '../../components/Error';
 const Details = ({route}) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, ScrollView, Pressable, Linking} from 'react-native';
+import {View, Text, Image, Pressable, Linking} from 'react-native';
 import styles from './MealDetailsCard.styles';
 
 const MealDetailsCard = ({meal}) => {
