@@ -32,6 +32,19 @@ const styles = StyleSheet.create({
   description: {
     margin: 5,
   },
+  press: {
+    backgroundColor: 'red',
+    borderRadius: 10,
+    margin: 10,
+    minHeight: 50,
+    justifyContent: 'center',
+  },
+  pressText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center',
+  },
 });
 
 export default styles;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, ScrollView} from 'react-native';
+import {View, Text, Image, ScrollView, Pressable, Linking} from 'react-native';
 import styles from './MealDetailsCard.styles';
 
 const MealDetailsCard = ({meal}) => {
@@ -12,8 +12,14 @@ const MealDetailsCard = ({meal}) => {
         <Text style={styles.title}>{meal.strMeal}</Text>
         <Text style={styles.area}>{meal.strArea}</Text>
       </View>
-
       <Text style={styles.description}>{meal.strInstructions}</Text>
+      <Pressable
+        style={styles.press}
+        onPress={() => {
+          Linking.openURL(meal.strYoutube);
+        }}>
+        <Text style={styles.pressText}>Watch On Youtube</Text>
+      </Pressable>
     </View>
   );
 };
